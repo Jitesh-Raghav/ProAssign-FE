@@ -30,7 +30,7 @@ const InviteUserForm = ({projectId}) => {
   });
   const onSubmit = (data) => {
     data.projectId=projectId
-    dispatch(inviteToProject(data))
+     dispatch(inviteToProject(data))
     
     console.log("sent invitation", data);
 
@@ -51,7 +51,7 @@ const InviteUserForm = ({projectId}) => {
                         <Input
                           {...field}
                           className="border w-full border-gray-700 py-5 px-5"
-                          placeholder="enter user email"
+                          placeholder="Enter user email"
                         />
                       </FormControl>
 
@@ -61,7 +61,7 @@ const InviteUserForm = ({projectId}) => {
                 />
                 
                 <Button type="submit" className="w-full bg-slate-400 py-5">
-                  SENT INVITATION
+                  Send Invitation
                 </Button>
               </form>
             </Form>

@@ -83,9 +83,9 @@ const IssueDetails = () => {
               <SelectValue placeholder={"To Do"} />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="pending">To Do</SelectItem>
-              <SelectItem value="in_progress">In Progress</SelectItem>
-              <SelectItem value="done">Done</SelectItem>
+              <SelectItem value="Pending">To Do</SelectItem>
+              <SelectItem value="In Progress">In Progress</SelectItem>
+              <SelectItem value="Done">Done</SelectItem>
             </SelectContent>
           </Select>
 
@@ -115,9 +115,9 @@ const IssueDetails = () => {
                   <p className="w-[7rem]">Status</p>
                   <Badge
                     className={`${
-                      issue.issueDetails?.status == "in_progress"
+                      issue.issueDetails?.status == "In Progress"
                         ? "bg-orange-300"
-                        : issue.issueDetails?.status == "done"
+                        : issue.issueDetails?.status == "Done"
                         ? "bg-green-500"
                         : ""
                     }`}
@@ -128,16 +128,16 @@ const IssueDetails = () => {
 
                 <div className="flex gap-10 items-center">
                   <p className="w-[7rem]">Realese</p>
-                  <div className="flex items-center gap-3">-</div>
+                  <div className="flex items-center gap-3">{issue.issueDetails?.dueDate}</div>
                 </div>
                 <div className="flex gap-10 items-center">
                   <p className="w-[7rem]">Reporter</p>
                   {issue.issueDetails?.assignee ? (
                     <div className="flex items-center gap-3">
                       <Avatar className="h-8 w-8 text-xs">
-                        <AvatarFallback>A</AvatarFallback>
+                        <AvatarFallback>G</AvatarFallback>
                       </Avatar>
-                      <p>Ashok</p>
+                      <p>Github</p>
                     </div>
                   ) : (
                     <div>-</div>

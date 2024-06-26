@@ -72,7 +72,7 @@ export function CreateIssueForm({ status }) {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="describe your task..." {...field} />
+                <Input placeholder="Describe your task..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

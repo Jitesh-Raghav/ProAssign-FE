@@ -11,12 +11,12 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { SheetClose } from '@/components/ui/sheet'
 
 const FilterSheet = () => {
-    const navigate=useNavigate();
-    const location=useLocation();
+    const navigate = useNavigate();
+    const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const category = searchParams.get("category");
-    const tag=searchParams.get("tag");
-    const handleFilterChange = (section,value) => {
+    const tag = searchParams.get("tag");
+    const handleFilterChange = (section, value) => {
         console.log(value, section)
         
         if (value === "all") {
@@ -27,12 +27,13 @@ const FilterSheet = () => {
         const query = searchParams.toString();
         navigate({ search: query ? `?${query}` : "" });
       };
+  
   return (
     <div>
         <SheetClose> 
         <div className="p-5 sticky top-10">
             <div className="flex justify-between lg:w-[20rem]">
-              <p className="text-xl tracking-wider">filters</p>
+              <p className="text-xl tracking-wider">Filters</p>
               <Button variant="ghost" size="icon">
                 <MixerHorizontalIcon />
               </Button>
@@ -45,20 +46,20 @@ const FilterSheet = () => {
                   <div className="pt-5">
                     <RadioGroup onValueChange={(value)=>handleFilterChange("category",value)} className="space-y-3" defaultValue={category || "all"}>
                       <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="all" id="r1" />
-                        <Label htmlFor="r1">all</Label>
+                        <RadioGroupItem value="All" id="r1" />
+                        <Label htmlFor="r1">All</Label>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="fullstack" id="r1" />
-                        <Label htmlFor="r1">full stack</Label>
+                        <RadioGroupItem value="fullstack" id="r2" />
+                        <Label htmlFor="r2">FullStack</Label>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="frontend" id="r2" />
-                        <Label htmlFor="r2">frontend</Label>
+                        <RadioGroupItem value="frontend" id="r3" />
+                        <Label htmlFor="r3">Frontend</Label>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="backend" id="r3" />
-                        <Label htmlFor="r3">backend</Label>
+                        <RadioGroupItem value="backend" id="r4" />
+                        <Label htmlFor="r4">Backend</Label>
                       </div>
                     </RadioGroup>
                   </div>

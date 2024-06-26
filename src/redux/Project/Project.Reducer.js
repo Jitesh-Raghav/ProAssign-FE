@@ -16,6 +16,8 @@ const ProjectReducer = (state = initialState, action) => {
     case actionTypes.UPDATE_PROJECT_REQUEST:
     case actionTypes.DELETE_PROJECT_REQUEST:
     case actionTypes.FETCH_PROJECT_BY_Id_REQUEST:
+    case actionTypes.ACCEPT_INVITATION_REQUEST:
+    case actionTypes.INVITE_TO_PROJECT_REQUEST:    
       return {
         ...state,
         loading: true,
@@ -25,7 +27,8 @@ const ProjectReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        projects: action.projects
+        projects: action.projects,
+        error:null,
       };
       case actionTypes.SEARCH_PROJECT_SUCCESS:
       return {
@@ -37,7 +40,8 @@ const ProjectReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        projects: [...state.projects, action.project]
+        projects: [...state.projects, action.project],
+        error:null,
       };
       case actionTypes.FETCH_PROJECT_BY_Id_SUCCESS:
         return {

@@ -45,7 +45,7 @@ export function IssueList({ title, status }) {
           </CardHeader>
           <CardContent className="px-2">
             <div className="space-y-2">
-              {issue.issues.filter((item)=>item.status==status).map((item) => (
+              {issue.issues.filter((item)=>item.status==status).map((item) => (    //this is done, cuz we want to map todo issue and inprogress issue separately, so we gave it a status...
                 <IssueCard item={item} key={item} />
               ))}
             </div>

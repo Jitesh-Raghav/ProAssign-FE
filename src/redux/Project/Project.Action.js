@@ -140,6 +140,7 @@ export const inviteToProject = ({email, projectId}) => {
       dispatch({ type: actionTypes.INVITE_TO_PROJECT_SUCCESS });
       console.log("invite to project ",data);
     } catch (error) {
+      console.log("invitation error aa ",error)
       dispatch({ type: actionTypes.INVITE_TO_PROJECT_FAILURE, error: error.message });
     }
   };

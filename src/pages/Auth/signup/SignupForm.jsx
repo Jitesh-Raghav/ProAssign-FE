@@ -67,7 +67,7 @@ const SignupForm = () => {
                   <Input
                     {...field}
                     className="border w-full border-gray-700 py-5 px-5"
-                    placeholder="enter your email"
+                    placeholder="Enter your email"
                   />
                 </FormControl>
 
@@ -92,7 +92,7 @@ const SignupForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full bg-slate-400 py-5">
+          <Button type="submit" className="w-full  py-5 bg-[#DE2D54] hover:bg-[#DE2D54]">
             REGISTER
           </Button>
         </form>

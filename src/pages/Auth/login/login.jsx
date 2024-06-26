@@ -50,7 +50,7 @@ const LoginForm = () => {
                         <Input
                           {...field}
                           className="border w-full border-gray-700 py-5 px-5"
-                          placeholder="enter your email"
+                          placeholder="Enter your email"
                         />
                       </FormControl>
 
@@ -75,7 +75,7 @@ const LoginForm = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full bg-slate-400 py-5">
+                <Button type="submit" className="w-full bg-[#DE2D54] py-5">
                   Login
                 </Button>
               </form>

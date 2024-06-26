@@ -47,7 +47,7 @@ const ProjectDetails = () => {
                     <p>{project.projectDetails?.owner?.fullName}</p>
                   </div>
                   <div className="flex">
-                    <p className="w-36">Members : </p>
+                    <p className="w-36">Contributors : </p>
                     <div className="flex items-center gap-2">
                       {project.projectDetails?.team.map((item) => (
                         <Avatar className={`cursor-pointer`} key={item}>
@@ -56,7 +56,7 @@ const ProjectDetails = () => {
                       ))}
                     </div>
 
-                   {auth.user?.id===project.projectDetails?.owner.id && <Dialog>
+                   { auth.user?.id===project.projectDetails?.owner.id && <Dialog>
                       <DialogTrigger>
                       <DialogClose>
                         <Button
@@ -66,7 +66,7 @@ const ProjectDetails = () => {
                           onClick={handleProjectInvitation}
                         >
                           {" "}
-                          <span className="pr-1">invite</span>
+                          <span className="pr-1">Invite</span>
                           <PlusIcon className="w-3 h-3" />
                         </Button>
                       </DialogClose>
