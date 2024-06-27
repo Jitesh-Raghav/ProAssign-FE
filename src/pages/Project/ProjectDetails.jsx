@@ -1,7 +1,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { IssueList } from "../Issue/IssueList";
 import ChatBox from "./ChatBox";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import {
@@ -19,6 +19,7 @@ import InviteUserForm from "./InviteUserForm";
 const ProjectDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
+  const navigate= useNavigate();
   const { project,auth } = useSelector((store) => store);
   useEffect(() => {
     dispatch(fetchProjectById(id));
@@ -63,7 +64,7 @@ const ProjectDetails = () => {
                           size="sm"
                           variant="outline"
                           className="ml-2"
-                          onClick={handleProjectInvitation}
+                          // onClick={handleProjectInvitation}
                         >
                           {" "}
                           <span className="pr-1">Invite</span>
@@ -115,6 +116,7 @@ const ProjectDetails = () => {
         </div>
       ) : (
         <div>
+          {/* {navigate(`/project/${project.projectDetails?.id}`)} */}
           <Loader />
         </div>
       )}

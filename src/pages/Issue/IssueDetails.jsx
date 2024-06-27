@@ -83,9 +83,9 @@ const IssueDetails = () => {
               <SelectValue placeholder={"To Do"} />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="Pending">To Do</SelectItem>
-              <SelectItem value="In Progress">In Progress</SelectItem>
-              <SelectItem value="Done">Done</SelectItem>
+              <SelectItem value="pending">To do</SelectItem>
+              <SelectItem value="in_progress">In Progress</SelectItem>
+              <SelectItem value="done">Done</SelectItem>
             </SelectContent>
           </Select>
 
@@ -115,9 +115,9 @@ const IssueDetails = () => {
                   <p className="w-[7rem]">Status</p>
                   <Badge
                     className={`${
-                      issue.issueDetails?.status == "In Progress"
+                      issue.issueDetails?.status == "in_progress"
                         ? "bg-orange-300"
-                        : issue.issueDetails?.status == "Done"
+                        : issue.issueDetails?.status == "done"
                         ? "bg-green-500"
                         : ""
                     }`}
