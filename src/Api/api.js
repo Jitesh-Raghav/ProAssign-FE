@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 // const LOCALHOST='http://localhost:8080'
-const LOCALHOST='https://proassign-be-production.up.railway.app/'
+const LOCALHOST='https://proassign-be-production.up.railway.app'
 
 export const API_BASE_URL = LOCALHOST
 
