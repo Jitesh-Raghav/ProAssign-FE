@@ -1,9 +1,9 @@
 
 import axios from 'axios';
-// const LOCALHOST='http://localhost:8080'
-const LOCALHOST='https://proassign-be-production.up.railway.app'
 
-export const API_BASE_URL = LOCALHOST
+
+// const LOCALHOST='http://localhost:8080'
+export const API_BASE_URL="https://proassign-be-production.up.railway.app"
 
 const api = axios.create({
   baseURL: API_BASE_URL,
