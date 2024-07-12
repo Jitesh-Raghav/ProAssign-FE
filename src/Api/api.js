@@ -1,6 +1,7 @@
 
 import axios from 'axios';
-const LOCALHOST='http://localhost:8080'
+// const LOCALHOST='http://localhost:8080'
+const LOCALHOST='https://proassign.onrender.com'
 
 export const API_BASE_URL = LOCALHOST
 
