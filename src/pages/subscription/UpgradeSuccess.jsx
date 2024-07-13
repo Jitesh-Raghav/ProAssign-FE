@@ -15,12 +15,12 @@ const UpgradeSuccess = () => {
   const queryParams = new URLSearchParams(location.search);
 
   // Access the 'payment_id' and 'planType' parameters
-  const paymentId = queryParams.get("payment_id");
+  const paymentId = queryParams.get("razorpay_payment_id");
   const planType = queryParams.get("planType");
 
   console.log("Payment ID:", paymentId);
   console.log("Plan Type:", planType);
-
+  console.log(subscription)
   useEffect(() => {
     dispatch(upgradeSubscription({planType}))
     dispatch(getUserSubscription())
@@ -36,7 +36,7 @@ const UpgradeSuccess = () => {
         <div className="space-y-3">
           <p className="text-green-500">start date: {subscription.userSubscription?.subscriptionStartDate}</p>
           <p className="text-red-500">end date : {subscription.userSubscription?.subscriptionEndDate}</p>
-          <p>plan type : {subscription.userSubscription?.planType}</p>
+          <p>plan type : {subscription?.userSubscription?.planType}</p>
         </div>
         <Button onClick={() => navigate("/")}>Go To Home</Button>
       </Card>

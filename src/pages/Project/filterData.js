@@ -12,4 +12,7 @@ export const tags=[
     "Java",
     "C++",
     "GoLang",
+    "HTML",
+    "CSS",
+    "Node.js"
   ]
