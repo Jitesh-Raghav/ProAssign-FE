@@ -159,7 +159,7 @@ export const acceptInvitation = ({invitationToken,navigate}) => {
       console.log("accept invitation",data)
       dispatch({ type: actionTypes.ACCEPT_INVITATION_SUCCESS,payload:data });
     } catch (error) {
-      console.log("error ",error)
+      console.log("error aa gyis ",error)
       dispatch({ type: actionTypes.ACCEPT_INVITATION_FAILURE, error: error.message });
     }
   };
