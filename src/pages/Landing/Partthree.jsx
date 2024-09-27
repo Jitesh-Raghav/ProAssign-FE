@@ -1,6 +1,6 @@
 import React from 'react';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
-import Pro from '../../assets/pro.png';
+import Pro from '../../assets/Pro.png';
 import Image from '../../assets/image.webp';
 import Imageone from '../../assets/Imageone.webp';
 import Logo from '../../assets/appLogo.png';
