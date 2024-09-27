@@ -14,7 +14,7 @@ const Partthree = () => {
       </div>
 
       <div className='flex items-center justify-center mt-4'>
-        <AcUnitIcon style={{ fontSize: 60 }} className="mt-14" />
+        <AcUnitIcon style={{ fontSize: 60 }} className="mt-14 text-white" />
       </div>
       
       <div className=''>

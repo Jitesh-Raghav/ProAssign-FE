@@ -14,7 +14,7 @@ const PartOne = () => {
         </div>
         <p className='text-gray-600 font-normal text-xl flex items-center justify-center bg-gray-100 mb-14 font-Charlielight'>The only project management tool you need to plan and track work across every team.</p>
        <div className='bg-gray-100 flex items-center justify-center mb-14'>
-       <button className='bg-blue-600 px-6 py-3 rounded-3xl font-normal justify-center flex items-center hover:bg-blue-900 font-Charlielight text-lg'>Signup for free</button>
+       <button className='bg-blue-600 px-6 py-3 rounded-3xl font-normal justify-center flex items-center hover:bg-blue-900 font-Charlielight text-lg text-white'>Signup for free</button>
        </div>
 
        <div className="relative bg-gray-100 flex items-center justify-center mt-20 space-x-4 h-full w-full pb-64">
