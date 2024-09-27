@@ -21,7 +21,7 @@ const PartOne = () => {
       <div className="absolute bottom-0 left-0 w-full h-20 bg-white transform skew-y-[-5deg] z-0"></div>
       
       {/* Product Card 1 */}
-      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[290px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
+      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[280px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
         <p className="text-sm font-normal text-gray-700 pt-8 px-7">PRODUCT & ISSUE TRACKING</p>
         <p className="font-bold text-3xl text-black pt-2 pl-7">Software <br /> Development</p>
         <div className="mt-6 mr-0 ml-6">
@@ -30,7 +30,7 @@ const PartOne = () => {
       </div>
 
       {/* Product Card 2 */}
-      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[290px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
+      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[280px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
         <p className="text-sm font-normal text-gray-700 pt-8 px-7">COLLABORATE WITH TEAM</p>
         <p className="font-bold text-3xl text-black pt-2 pl-7">Real Time</p>
         <div className="mt-12 mr-0 ml-6">
@@ -39,7 +39,7 @@ const PartOne = () => {
       </div>
 
       {/* Product Card 3 */}
-      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[290px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
+      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[280px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
         <p className="text-sm font-normal text-gray-700 pt-8 px-7">MANAGE & TRACK REQUESTS</p>
         <p className="font-bold text-3xl text-black pt-2 pl-7">IT</p>
         <div className="mt-12 mr-0 ml-6">
@@ -48,7 +48,7 @@ const PartOne = () => {
       </div>
 
       {/* Product Card 4 */}
-      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[290px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
+      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[280px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
         <p className="text-sm font-normal text-gray-700 pt-8 px-7">BUILD CREATIVE WORKFLOWS</p>
         <p className="font-bold text-3xl text-black pt-2 pl-7">Design</p>
         <div className="mt-12 mr-0 ml-6">
@@ -57,7 +57,7 @@ const PartOne = () => {
       </div>
 
       {/* Product Card 5 */}
-      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[290px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
+      <div className="bg-gray-50 border border-gray-300 rounded-3xl h-[580px] w-[280px] overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:translate-y-[-15px] hover:shadow-2xl z-10">
         <p className="text-sm font-normal text-gray-700 pt-8 px-7">CREATE CUSTOM PROCESS</p>
         <p className="font-bold text-3xl text-black pt-2 pl-7">Operations</p>
         <div className="mt-12 mr-0 ml-6">
