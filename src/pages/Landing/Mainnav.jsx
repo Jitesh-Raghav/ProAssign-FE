@@ -1,7 +1,7 @@
 import React from 'react'
-import applogo from '../../assets/applogo.png'
+import applogo from '../../assets/applogo'
 import SearchIcon from '@mui/icons-material/Search';
-import Auth from '../Auth/Auth.jsx';
+
 
 const Mainnav = () => {
 
