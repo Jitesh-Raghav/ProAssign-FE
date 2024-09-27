@@ -13,6 +13,7 @@ import AcceptInvitation from "./pages/Project/AcceptInvitation";
 import Subscription from "./pages/subscription/Subscription";
 import UpgradeSuccess from "./pages/subscription/UpgradeSuccess";
 import { getUserSubscription } from "./redux/Subscription/Action";
+import LandingPage from "./pages/Landing/LandingPage";
 
 
 
@@ -47,7 +48,8 @@ function App() {
           </Routes>
         </>
       ) : (
-        <Auth />
+        <LandingPage/>
+        // <Auth />
       )}
     </>
 
