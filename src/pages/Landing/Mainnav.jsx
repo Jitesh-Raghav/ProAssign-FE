@@ -1,5 +1,5 @@
 import React from 'react'
-import applogo from '../../assets/appLogo'
+import applogo from '../../assets/appLogo.png';
 import SearchIcon from '@mui/icons-material/Search';
 
 
