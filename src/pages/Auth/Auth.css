@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #0A0A0A;
+    background: rgba(37, 99, 235, 0.9);;
 }
 @property --a{
     syntax: '<angle>';
@@ -20,7 +20,7 @@
     position: relative;
     
     
-    background: repeating-conic-gradient(from var(--a), #ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50%);
+    background: repeating-conic-gradient(from var(--a), #5227ff 0%, #5227ff 5%, transparent 5%, transparent 40%, #5227ff 50%);
     filter: drop-shadow(0 15px 50px #000);
     border-radius: 20px;
     animation: rotating 4s linear infinite;
@@ -44,7 +44,7 @@
     position: absolue;
     width: 100%;
     height: 100%;
-    background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 40%, #45f3ff 50%);
+    background: repeating-conic-gradient(from var(--a), #458fff 0%, #45f3ff 5%, transparent 5%, transparent 40%, #45f3ff 50%);
     filter: drop-shadow(0 15px 50px #000);
     border-radius: 20px;
     animation: rotating 4s linear infinite;
@@ -54,9 +54,9 @@
     content:"";
     position: absolute;
     inset: 4px;
-    background: #1d1d24;
+    background: #e5e7eb;
     border-radius: 15px;
-    border: 5px solid #25252b;
+    border: 2px solid #4d4d4d;
 }
 .login{
     position: absolute;
@@ -66,7 +66,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    background: rgb(0,0,0,0.2);
+    background: #e5e7eb;
     z-index: 1000;
     box-shadow: inset 0 10px 20px rgb(0,0,0,0.5);
     border-bottom: 2px solid rgb(255,255,255,0.5);

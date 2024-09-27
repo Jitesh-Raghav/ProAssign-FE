@@ -9,16 +9,17 @@ const Auth = () => {
   const [active, setActive] = useState(true);
   return (
     <div className="loginContainer">
-      <div className="box h-[30rem] w-[25rem] ">
+      <div className="box h-[35rem] w-[30rem] ">
         <div className="minContainer login ">
           <div className="loginBox w-full px-10 space-y-5">
             {active ? <SignupForm /> : <LoginForm />}
 
             <div className="flex items-center justify-center">
-              <span>already have account ? </span>
-              <Button onClick={() => setActive(!active)} variant="ghost">
-                {active ? "signin" : "signup"}
-              </Button>
+              <span className="text-black">Have an account? </span>
+              <button onClick={() => setActive(!active)} variant="ghost" style={{ color: "blue" }} className="px-3 py-2 hover:bg-gray-400 rounded-xl">
+                 {active ? "Sign in" : "Sign up"}
+             </button>
+
             </div>
           </div>
         </div>

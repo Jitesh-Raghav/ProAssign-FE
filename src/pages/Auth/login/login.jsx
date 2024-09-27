@@ -35,7 +35,7 @@ const LoginForm = () => {
   };
   return (
     <div className="space-y-5">
-            <h1 className="text-center text-xl">Login</h1>
+            <h1 className="text-center text-2xl font-bold text-blue-600 ">Login</h1>
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -49,7 +49,7 @@ const LoginForm = () => {
                       <FormControl>
                         <Input
                           {...field}
-                          className="border w-full border-gray-700 py-5 px-5"
+                          className="border w-full border-gray-700 py-5 px-5 text-gray-800"
                           placeholder="Enter your email"
                         />
                       </FormControl>
@@ -67,7 +67,7 @@ const LoginForm = () => {
                         <Input
                           {...field}
                           type="password" // Added type attribute for password input
-                          className="border w-full border-gray-700 py-5 px-5"
+                          className="border w-full border-gray-700 py-5 px-5 text-gray-800"
                           placeholder="Enter your password"
                         />
                       </FormControl>
@@ -75,7 +75,7 @@ const LoginForm = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full bg-[#DE2D54] py-5">
+                <Button type="submit" className="w-full bg-[#2d7aff] hover:bg-[#2d5bab]py-5 text-white">
                   Login
                 </Button>
               </form>
