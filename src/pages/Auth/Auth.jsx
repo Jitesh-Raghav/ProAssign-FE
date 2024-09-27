@@ -8,8 +8,12 @@ import { useState } from "react";
 const Auth = () => {
   const [active, setActive] = useState(true);
   return (
-    <div className="loginContainer">
-      <div className="box h-[35rem] w-[30rem] ">
+    
+    <div className="loginContainer justify-around">
+      <div className="m-8">
+         <p className="text-9xl font-bold text-white items-center justify-center">Track your <br />Project Bugs <br /> now!!</p>
+      </div>
+      <div className="box h-[35rem] w-[30rem] mr-32">
         <div className="minContainer login ">
           <div className="loginBox w-full px-10 space-y-5">
             {active ? <SignupForm /> : <LoginForm />}
@@ -25,6 +29,7 @@ const Auth = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 

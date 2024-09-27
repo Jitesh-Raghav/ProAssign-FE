@@ -65,6 +65,9 @@ const PartOne = () => {
         </div>
       </div>
     </div>
+    {/* <div className='flex items-center justify-center z-25'>
+         <p className="text-7xl font-bold text-blue-600 items-center justify-center z-20">Come Join Us!</p>
+      </div> */}
     </div>
   )
 }
