@@ -35,7 +35,7 @@ const LoginForm = () => {
   };
   return (
     <div className="space-y-5">
-            <h1 className="text-center text-2xl font-bold text-blue-600 ">Login</h1>
+            <h1 className="text-center text-2xl font-bold text-blue-600 font-Charlielight">Login</h1>
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -75,7 +75,7 @@ const LoginForm = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full bg-[#2d7aff] hover:bg-[#2d5bab]py-5 text-white">
+                <Button type="submit" className="w-full bg-[#2d7aff] hover:bg-[#2d5bab]py-5 text-white font-Charlielight">
                   Login
                 </Button>
               </form>

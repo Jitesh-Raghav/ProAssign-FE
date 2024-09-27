@@ -38,7 +38,7 @@ const SignupForm = () => {
   };
   return (
     <div className="space-y-5">
-      <h1 className="text-center text-2xl font-bold text-blue-600">Register</h1>
+      <h1 className="text-center text-2xl font-bold text-blue-600 font-Charlielight">Register</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
@@ -92,7 +92,7 @@ const SignupForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full  py-5 bg-[#2d7aff] hover:bg-[#2d5bab] text-white">
+          <Button type="submit" className="w-full  py-5 bg-[#2d7aff] hover:bg-[#2d5bab] text-white font-Charlielight">
             Sign Up
           </Button>
         </form>

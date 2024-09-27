@@ -19,6 +19,8 @@ export const theme = {
   extend: {
     fontFamily: {
       'roboto': ['"Roboto-Regular"', 'sans-serif'],
+      'Charlie':['Charlie'],
+      'Charlielight':['Charlielight']
     },
     colors: {
       border: "hsl(var(--border))",

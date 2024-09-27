@@ -14,6 +14,7 @@ const LandingPage = () => {
       <Auth/>
       <Parttwo/>
       <Partthree/>
+    
    </div>
   )
 }

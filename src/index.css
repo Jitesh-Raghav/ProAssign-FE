@@ -9,7 +9,15 @@
 }
 
 
+@font-face {
+  font-family: "Charlie";
+  src: local("Charlie"), url('./assets/charlie-display.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: "Charlielight";
+  src: local("Charlielight"), url('./assets/charlie-display-light.ttf') format('truetype');
+}
 
 @layer base {
   :root {
