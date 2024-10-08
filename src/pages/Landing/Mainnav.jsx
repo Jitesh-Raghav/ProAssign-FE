@@ -1,13 +1,32 @@
 import React from 'react'
 import applogo from '../../assets/appLogo.png';
 import SearchIcon from '@mui/icons-material/Search';
+import  { useState, useEffect } from 'react';
 
 
 const Mainnav = () => {
 
+  const [hasShadow, setHasShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHasShadow(true);
+      } else {
+        setHasShadow(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-        <div className='fixed top-0 left-0 z-40 h-[74px] w-full bg-white flex items-center border-b border-gray-200 shadow-lg font-Charlie'>
+        <div className='fixed top-0 left-0 z-40 h-[74px] w-full bg-white flex items-center border-b border-gray-200 font-Charlie shadow-lg'>
              <div className='bg-blue-600 h-full w-[74px] items-start mr-16'><img src={applogo} className='items-center justify-between size-[74px] object-contain'/></div>
              <h2 className='text-black text-xl font-extrabold mr-16'><span className='text-blue-600 font-Charlie'>Pro</span><span className='text-gray-700 font-Charlie'>Assign</span></h2>
               
