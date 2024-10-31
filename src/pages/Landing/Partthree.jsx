@@ -4,6 +4,8 @@ import Pro from '../../assets/Pro.png';
 import Image from '../../assets/image.webp';
 import Imageone from '../../assets/Imageone.webp';
 import Logo from '../../assets/appLogo.png';
+import { Boxes } from "../../components/ui/background-boxes";
+import { cn } from "@/lib/utils";
 
 const Partthree = () => {
   return (
@@ -56,10 +58,22 @@ const Partthree = () => {
         </div>
 
       </div>
-      <div className='flex items-center justify-around'>
+      {/* <div className='flex items-center justify-around'>
       <p className='text-white text-5xl items-start font-Charlie font-bold pt-40 ml-4 justify-center'>No matter what you're trying to dream up, <br />ProAssign helps you get it done</p>
        <img src={Logo} alt="" className='items-center justify-center w-[25%]'/>
-      </div>
+      </div> */}
+      <div className="h-96 relative w-full overflow-hidden bg-blue-600 flex flex-col items-center justify-center rounded-lg">
+  <div className="absolute inset-0 w-full h-full bg-blue-600 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+  <Boxes />
+  <h1 className={cn("md:text-4xl text-xl text-white font-Charlie font-bold  relative z-20")}>
+  No matter what you're trying to dream up
+  </h1>
+  <p className="text-center mt-2 text-blue-200 text-lg font-Charlie font-bold  relative z-20">
+  ProAssign helps you get it done.
+  </p>
+</div>
+
        </div>
   );
 }

@@ -12,7 +12,7 @@ const Auth = () => {
     <div className="loginContainer justify-around">
       
       <div className="relative m-8">
-        <p className="text-9xl font-bold text-white relative z-10 font-Charlie">
+        <p className="text-8xl font-bold text-white relative z-10 font-Charlie">
           Track your <br /> Project Bugs <br /> now!!
         </p>
       </div>

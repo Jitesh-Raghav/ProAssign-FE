@@ -4,6 +4,7 @@ import PartOne from './PartOne'
 import Parttwo from './Parttwo'
 import Partthree from './Partthree'
 import Auth from '../Auth/Auth'
+import Partfour from './Partfour'
 
 
 const LandingPage = () => {
