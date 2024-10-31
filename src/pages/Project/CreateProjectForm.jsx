@@ -1,5 +1,17 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+"use client";
+import React from "react";
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../../components/ui/animated-modal";
+
+import { motion } from "framer-motion";
+import CreateIcon from '@mui/icons-material/Create';
 
 import {
   Form,
@@ -179,9 +191,19 @@ const CreateProjectForm = () => {
               </div>
               
             ) : (
-              <Button type="submit" className="w-full  py-5">
-                Create Project
-              </Button>
+              // <Button type="submit" className="w-full  py-5">
+              //   Create Project
+              // </Button>
+              <Modal>
+              <ModalTrigger className="bg-[#2d7aff] hover:bg-[#2d5bab] dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+                <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                 Create Project
+                </span>
+                <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                  <CreateIcon/>
+                </div>
+              </ModalTrigger>
+              </Modal>
             )}
           </DialogClose>
         </form>

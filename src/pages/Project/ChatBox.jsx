@@ -145,7 +145,7 @@ const ChatBox = () => {
                   className={`space-y-2 py-2 px-5 border rounded-ss-2xl rounded-e-xl`}
                 >
                   <p>{item.sender?.fullName}</p>
-                  <p className="text-gray-300">{item.content}</p>
+                  <p className="text-gray-700">{item.content}</p>
                 </div>
               </div>
             ) : (

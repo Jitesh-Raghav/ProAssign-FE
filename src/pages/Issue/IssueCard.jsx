@@ -30,7 +30,7 @@ const IssueCard = ({item}) => {
     <Card className="rounded-md py-1 pb-2">
       <CardHeader className="py-0 pb-1">
         <div className="flex justify-between items-center">
-          <CardTitle className="cursor-pointer hover:text-gray-300" onClick={()=>navigate(`/project/${id}/issue/${item.id}`)}>{item.title}</CardTitle>
+          <CardTitle className="cursor-pointer hover:text-gray-600" onClick={()=>navigate(`/project/${id}/issue/${item.id}`)}>{item.title}</CardTitle>
 
           <DropdownMenu>
             <DropdownMenuTrigger>

@@ -12,6 +12,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useDispatch } from "react-redux";
 import { register } from "@/redux/Auth/Action";
+import LoginIcon from '@mui/icons-material/Login';
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../../../components/ui/animated-modal";
 
 const formSchema = z.object({
   fullName: z.string().nonempty("Full name is required"),
@@ -92,9 +100,19 @@ const SignupForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full  py-5 bg-[#2d7aff] hover:bg-[#2d5bab] text-white font-Charlielight">
+          {/* <Button type="submit" className="w-full  py-5 bg-[#2d7aff] hover:bg-[#2d5bab] text-white font-Charlielight">
             Sign Up
-          </Button>
+          </Button> */}
+             <Modal>
+              <ModalTrigger className="bg-[#2d7aff] hover:bg-[#2d5bab] dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+                <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                 Sign Up
+                </span>
+                <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                  <LoginIcon/>
+                </div>
+              </ModalTrigger>
+              </Modal>
         </form>
       </Form>
     </div>

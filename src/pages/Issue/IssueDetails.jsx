@@ -36,17 +36,17 @@ const IssueDetails = () => {
   };
 
   return (
-    <div className="px-20 py-8 text-gray-400">
+    <div className="px-20 py-8 text-gray-800">
       <div className="flex justify-between border p-10 rounded-lg">
         <ScrollArea className="h-[80vh] w-[60%] ">
           <div className="">
-            <h1 className="text-lg font-semibold text-gray-400">
+            <h1 className="text-lg font-semibold text-gray-800">
               {issue.issueDetails?.title}
             </h1>
 
             <div className="py-5">
-              <h2 className="font-semibold text-gray-400">Description</h2>
-              <p className="text-gray-400 text-sm mt-3">
+              <h2 className="font-semibold text-gray-800">Description</h2>
+              <p className="text-gray-800 text-sm mt-3">
                 {issue.issueDetails?.description}
               </p>
             </div>
@@ -116,7 +116,7 @@ const IssueDetails = () => {
                   <Badge
                     className={`${
                       issue.issueDetails?.status == "in_progress"
-                        ? "bg-orange-300"
+                        ? "bg-orange-500"
                         : issue.issueDetails?.status == "done"
                         ? "bg-green-500"
                         : ""

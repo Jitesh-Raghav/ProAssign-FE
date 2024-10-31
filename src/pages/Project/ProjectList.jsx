@@ -198,8 +198,8 @@ const ProjectList = () => {
               </Pagination> */}
               </div>
             ) : (
-              <div className="flex items-center justify-center h-[80vh]">
-                <h1>No projects...</h1>
+              <div className="flex items-center justify-center h-[-20vh]">
+                <h1>Err, No projects yet..</h1>
               </div>
             )}
           </div>

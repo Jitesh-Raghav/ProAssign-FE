@@ -32,7 +32,9 @@ const Navbar = () => {
   return (
     <div className="border-b  py-4 px-5 flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <p onClick={()=>navigate("/")} className="cursor-pointer">Project Managment</p>
+        <img onClick={()=>navigate("/")} className="w-16 h-auto object-contain cursor-pointer" src="../../src/assets/main.png" alt="" />
+        <p onClick={()=>navigate("/")} className="cursor-pointer">ProAssign</p>
+
         <Dialog>
           <DialogTrigger>
             <Button variant="ghost">New Project</Button>
