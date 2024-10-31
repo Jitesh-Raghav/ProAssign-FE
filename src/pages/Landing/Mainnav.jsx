@@ -48,7 +48,7 @@ const Mainnav = () => {
 
           <div className='flex items-center justify-between ml-32'>
           <Modal>
-              <ModalTrigger className="bg-blue-600 hover:bg-blue-500 dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+              <ModalTrigger className="bg-blue-600 dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
                 <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
                  Get it free
                 </span>
