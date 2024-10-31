@@ -2,6 +2,14 @@ import React from 'react'
 import applogo from '../../assets/appLogo.png';
 import SearchIcon from '@mui/icons-material/Search';
 import  { useState, useEffect } from 'react';
+import MoneyOffIcon from '@mui/icons-material/MoneyOff';
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../../components/ui/animated-modal";
 
 
 const Mainnav = () => {
@@ -39,7 +47,16 @@ const Mainnav = () => {
               </div>
 
           <div className='flex items-center justify-between ml-32'>
-                <button className='bg-blue-600 rounded-3xl px-[28px] py-[10px] ml-[140px] hover:bg-blue-900 text-white font-Charlielight text-lg'>Get it free</button>
+          <Modal>
+              <ModalTrigger className="bg-blue-600 hover:bg-blue-500 dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+                <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                 Get it free
+                </span>
+                <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                  <MoneyOffIcon/>
+                </div>
+              </ModalTrigger>
+              </Modal>
                 <SearchIcon style={{ color: 'black', marginLeft: '16px', fontSize: '32px' }} />
                 <div className='flex items-center justify-between ml-3'>
                    <button className='text-blue-600 font-bold px-11 border-l border-gray-800 font-Charlielight text-lg' >Sign in</button>

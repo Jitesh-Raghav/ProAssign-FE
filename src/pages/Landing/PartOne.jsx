@@ -4,19 +4,29 @@ import Two from '../../assets/two.webp'
 import Three from '../../assets/three.webp'
 import Four from '../../assets/four.webp'
 import Five from '../../assets/five.webp'
-
+import { BackgroundLines } from "@/components/ui/background-lines";
+import RocketIcon from '@mui/icons-material/RocketLaunch';
 
 const PartOne = () => {
   return (
     <div className='bg-gray-100'>
-        <div className='flex items-center justify-center bg-gray-100 h-full w-full mt-[74px]'>
-            <h1 className='text-gray-900 text-7xl font-bold items-center mt-16 mb-6 font-Charlielight'><span className='text-black font-extrabold font-Charlie'>Great outcomes</span> start with ProAssign</h1>
-        </div>
-        <p className='text-gray-600 font-normal text-xl flex items-center justify-center bg-gray-100 mb-14 font-Charlielight'>The only project management tool you need to plan and track work across every team.</p>
-       <div className='bg-gray-100 flex items-center justify-center mb-14'>
-       <button className='bg-blue-600 px-6 py-3 rounded-3xl font-normal justify-center flex items-center hover:bg-blue-900 font-Charlielight text-lg text-white'>Signup for free</button>
-       </div>
+      <BackgroundLines className="flex items-center justify-center w-full flex-col">
+      
+      <div className="flex items-center justify-center bg-gradient-to-b from-gray-100 to-white h-full w-full mt-[74px]">
+  <h1 className="text-gray-900 text-8xl font-bold items-center mt-16 mb-6 font-Charlielight text-center">
+    <span className="text-black font-Charlie">Great outcomes</span> start with
+    <br />
+    <span className="text-black font-extrabold font-Charlie block">ProAssign<RocketIcon sx={{ fontSize: 80 }} /></span>
+  </h1>
+</div>
 
+
+        <p className='text-gray-600 font-normal text-xl flex items-center justify-center mb-6 font-Charlielight'>The only project management tool you need to plan and track work across every team.</p>
+       <div className='bg-gray-100 flex items-center justify-center mb-14'>
+       <button className='bg-blue-600 px-6 py-3 rounded-3xl font-normal justify-center flex items-center hover:bg-blue-900 font-Charlielight text-lg text-white cursor-pointer'>Signup for free</button>
+         </div>
+         </BackgroundLines>
+      
        <div className="relative bg-gray-100 flex items-center justify-center mt-20 space-x-4 h-full w-full pb-64">
       <div className="absolute bottom-0 left-0 w-full h-20 bg-white transform skew-y-[-5deg] z-0"></div>
       
