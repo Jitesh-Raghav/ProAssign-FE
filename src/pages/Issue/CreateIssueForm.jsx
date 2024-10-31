@@ -15,6 +15,16 @@ import { useDispatch } from "react-redux";
 import { createIssue } from "@/redux/Issue/Issue.action";
 import { useParams } from "react-router-dom";
 import { DialogClose } from "@/components/ui/dialog";
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../../components/ui/animated-modal";
+
+import { motion } from "framer-motion";
+import CreateIcon from '@mui/icons-material/Create';
 
 const formSchema = z.object({
   issueName: z.string().min(2, {
@@ -79,7 +89,16 @@ export function CreateIssueForm({ status }) {
           )}
         />
         <DialogClose>
-          <Button type="submit">Create Issue</Button>
+        <Modal>
+              <ModalTrigger className="bg-[#2d7aff]  dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+                <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                 Create Issue
+                </span>
+                <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                  <CreateIcon/>
+                </div>
+              </ModalTrigger>
+              </Modal>
         </DialogClose>
       </form>
     </Form>

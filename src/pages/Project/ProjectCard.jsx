@@ -23,6 +23,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { deleteProject } from "@/redux/Project/Project.Action";
+import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 const ProjectCard = ({ item }) => {
   const navigate = useNavigate();
@@ -35,6 +36,7 @@ const ProjectCard = ({ item }) => {
   return (
     <Card className="p-5 w-full lg:max-w-3xl">
       <div className="space-y-5">
+   
         <div className="space-y-2">
           <div className="flex justify-between">
             <div className="flex items-center gap-5">
@@ -68,6 +70,7 @@ const ProjectCard = ({ item }) => {
 
           <p className="text-gray-500 text-sm">{item.description}</p>
         </div>
+       
 
         <div className="flex flex-wrap gap-2 items-center">
           {item.tags.map((tag) => (

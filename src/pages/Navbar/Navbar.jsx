@@ -19,6 +19,8 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { useNavigate } from 'react-router-dom';
+import AddIcon from '@mui/icons-material/Add';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
 
 const Navbar = () => {
   const { auth } = useSelector((store) => store);
@@ -37,7 +39,7 @@ const Navbar = () => {
 
         <Dialog>
           <DialogTrigger>
-            <Button variant="ghost">New Project</Button>
+            <Button variant="ghost">New Project<AddIcon sx={{ fontSize: 17 }}/></Button>
           </DialogTrigger>
 
           <DialogContent>
@@ -47,7 +49,7 @@ const Navbar = () => {
             <CreateProjectForm />
           </DialogContent>
         </Dialog>
-        <Button onClick={()=>navigate("/upgrade_plan")} variant="ghost">Upgrade</Button>
+        <Button onClick={()=>navigate("/upgrade_plan")} variant="ghost">Upgrade<LockOpenIcon sx={{ fontSize: 17 }}/></Button>
       </div>
 
       <div className="flex gap-3 items-center">

@@ -88,7 +88,7 @@ const CreateProjectForm = () => {
                     {...field}
                     type="text"
                     className="border w-full border-gray-700 py-5 px-5"
-                    placeholder="project name..."
+                    placeholder="Project name"
                   />
                 </FormControl>
                 <FormMessage />
@@ -104,7 +104,7 @@ const CreateProjectForm = () => {
                   <Input
                     {...field}
                     className="border w-full border-gray-700 py-5 px-5"
-                    placeholder="project description"
+                    placeholder="Project description"
                   />
                 </FormControl>
 
@@ -195,7 +195,7 @@ const CreateProjectForm = () => {
               //   Create Project
               // </Button>
               <Modal>
-              <ModalTrigger className="bg-[#2d7aff] hover:bg-[#2d5bab] dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+              <ModalTrigger className="bg-[#2d7aff] dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
                 <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
                  Create Project
                 </span>

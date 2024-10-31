@@ -14,6 +14,14 @@ import { z } from "zod";
 import { useDispatch } from "react-redux";
 import { login } from "@/redux/Auth/Action";
 import { inviteToProject } from "@/redux/Project/Project.Action";
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../../components/ui/animated-modal";
+import SendIcon from '@mui/icons-material/Send';
 
 const formSchema = z.object({
   email: z.string().email('Invalid email address'),
@@ -60,9 +68,16 @@ const InviteUserForm = ({projectId}) => {
                   )}
                 />
                 
-                <Button type="submit" className="w-full bg-slate-400 py-5">
-                  Send Invitation
-                </Button>
+                <Modal>
+              <ModalTrigger className="bg-[#2d7aff] dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
+                <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
+                 Send Invitation
+                </span>
+                <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                  <SendIcon/>
+                </div>
+              </ModalTrigger>
+              </Modal>
               </form>
             </Form>
 
