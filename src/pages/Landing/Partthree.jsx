@@ -72,7 +72,7 @@ const Partthree = () => {
        <h1 className={cn("md:text-4xl text-xl text-white font-Charlie font-bold  relative z-20")}>
          No matter what you're trying to dream up
         </h1>
-        <p className="text-center mt-2 text-blue-200 text-lg font-Charlie font-bold  relative z-20">
+        <p className="text-center mt-2 text-gray-200 text-7xl font-Charlie font-bold  relative z-20">
          ProAssign helps you get it done.
         </p>
    </div>
