@@ -1,0 +1,2 @@
+1. Move the have an account to the left of Auth.
+2. Make proassign text of footer yellow.
