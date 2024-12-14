@@ -23,7 +23,7 @@ const Auth = () => {
             {active ? <SignupForm /> : <LoginForm />}
 
             <div className="flex items-center justify-center">
-              <span className="text-black font-Charlielight">Have an account? </span>
+              <span className="text-black font-Charlielight ml-[-120px]">Have an account? </span>
               <button onClick={() => setActive(!active)} variant="ghost" style={{ color: "blue" }} className="px-3 py-2 font-Charlielight hover:bg-gray-400 rounded-xl">
                  {active ? "Sign in" : "Sign up"}
              </button>
