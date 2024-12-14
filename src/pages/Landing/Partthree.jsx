@@ -73,7 +73,7 @@ const Partthree = () => {
          No matter what you're trying to dream up
         </h1>
         <p className="text-center mt-2 text-gray-200 text-7xl font-Charlie font-bold  relative z-20">
-         ProAssign helps you get it done.
+        <span className='text-yellow-400 font-Charlie'>ProAssign</span> helps you get it done.
         </p>
    </div>
 
